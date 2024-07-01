@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "425469651998",
+    "project_id": "jnms-vadodara",
+    "storage_bucket": "jnms-vadodara.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425469651998:android:e506c1c39fdc374352120f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8EC5h1yGWlaRg_61VGFYJZdb-x79R-ys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

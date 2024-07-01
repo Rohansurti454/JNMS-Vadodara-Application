@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment">
+
+    <RelativeLayout
+        android:id="@+id/register"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/jangananaET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edt_drawable"
+            android:drawableStart="@drawable/twotone_numbers_24"
+            android:drawablePadding="10dp"
+            android:saveEnabled="true"
+            android:hint="Enter Janganana"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edt_drawable"
+            android:drawableStart="@drawable/twotone_person_24"
+            android:drawablePadding="10dp"
+            android:saveEnabled="true"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/jangananaET"/>
+
+        <EditText
+            android:id="@+id/phnoET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edt_drawable"
+            android:drawableStart="@drawable/twotone_call_24"
+            android:drawablePadding="10dp"
+            android:saveEnabled="true"
+            android:hint="Enter Phone Number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/nameET" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLL2"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+
+            <android.widget.Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="viewEnd"
+                android:layout_gravity="end"
+                android:padding="2dp"
+                android:background="@color/white"
+                />
+
+            <android.widget.Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/regNext"
+                android:text="Next"
+                android:drawableEnd="@drawable/round_arrow_forward_ios_24"
+                android:textAlignment="viewEnd"
+                android:drawablePadding="40dp"
+                android:layout_gravity="end"
+                android:textSize="16dp"
+                android:padding="2dp"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
