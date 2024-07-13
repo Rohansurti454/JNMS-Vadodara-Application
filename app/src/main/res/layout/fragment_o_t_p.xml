@@ -51,6 +51,18 @@
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/phoneNumberTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_below="@id/plsWaitTV"
+                    android:layout_centerHorizontal="true"/>
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -78,23 +90,24 @@
                     android:layout_centerHorizontal="true"
                     android:text="Get Otp"
                     android:shadowRadius="0"
-                    android:background="#9D9D9D"
+                    android:background="@drawable/btn_drawable_login"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:textColor="@color/white"
                     android:layout_marginTop="5dp"/>
 
-<!--                <TextView-->
-<!--                    android:layout_width="250dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:id="@+id/msgTV"-->
-<!--                    android:layout_below="@+id/otpBtn"-->
-<!--                    android:text="One Time Password(OTP) has been sent to your registered mobile number. Please enter the same"-->
-<!--                    android:gravity="center"-->
-<!--                    android:textColor="#DA757575"-->
-<!--                    android:layout_marginTop="15dp"-->
-<!--                    android:layout_alignParentBottom="true"-->
-<!--                    android:layout_centerHorizontal="true"/>-->
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msgTVAfterSent"
+                    android:layout_below="@+id/otpBtn"
+                    android:text="One Time Password(OTP) has been sent to your registered mobile number. Please enter the same"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="#DA757575"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -103,6 +116,7 @@
                     android:layout_below="@+id/otpBtn"
                     android:text="Please Click on GET OTP"
                     android:gravity="center"
+                    android:visibility="visible"
                     android:textColor="#DA757575"
                     android:layout_marginTop="15dp"
                     android:textSize="16sp"

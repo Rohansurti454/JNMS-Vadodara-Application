@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,12 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
-            android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.MyApplication">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,12 +28,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+        <activity
             android:name=".RegisterActivity"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:label="@string/title_activity_register"
-            android:theme="@style/Theme.MyApplication" />
+            android:theme="@style/Theme.MyApplication"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
     </application>
 
 </manifest>

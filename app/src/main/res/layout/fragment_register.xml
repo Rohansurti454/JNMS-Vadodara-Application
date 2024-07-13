@@ -57,8 +57,10 @@
             android:drawableStart="@drawable/twotone_call_24"
             android:drawablePadding="10dp"
             android:saveEnabled="true"
-            android:hint="Enter Phone Number"
-            android:inputType="number"
+            android:maxLength="13"
+            android:digits="+0123456789"
+            android:hint="Enter Phone Number with +91"
+            android:inputType="phone"
             android:padding="10dp"
             android:textSize="20sp"
             android:layout_below="@+id/nameET" />

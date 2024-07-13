@@ -18,38 +18,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-//        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-//
-//        bottomNavigationView.setOnItemSelectedListener(item -> {
-//
-//
-//            int itemID = item.getItemId();
-//
-//            if(itemID == R.id.navigation_next){
-//               replaceFragment(new OTPFragment());
-//            }
-//
-//
-//            if (itemID == R.id.navigation_previous){
-//                replaceFragment(new RegisterFragment());
-//            }
-//
-//            return true;
-//        });
-//    }
-//
-//    private void replaceFragment(Fragment fragment){
-//
-//        FragmentManager fm = getSupportFragmentManager();
-//        FragmentTransaction ft = fm.beginTransaction();
-//        ft.replace(R.id.fragmentContainerView, RegisterFragment.class, null);
-//        ft.addToBackStack(fragment.toString())
-//                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-//                .commit();
+        if(savedInstanceState == null){
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new RegisterFragment()).commit();
+        }
     }
-
-//    private void updateBottomNavVisibility(Fragment fragment) {
-//        boolean isRegisterFragment = fragment instanceof RegisterFragment;
-//        bottomNavigationView.getMenu().findItem(R.id.navigation_previous).setVisible(!isRegisterFragment);
-//    }
 }
